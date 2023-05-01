@@ -11,12 +11,13 @@
 
 6 - git init (para iniciar)
 
+
 --INICIO INSTRUCCIONES FUNDAMENTALES--
 git init
 git commit -m "first commit"
 git branch -m main  **--CON ESTE COMANDO CREAMOS LA RAMA MAIN EN LOCAL QUE ES LA MISMA QUE APARECE EN GITHUB--**
 git remote add origin https://github.com/Gabriel-R-GiT/nombre-del-repositorio.git (pegamos el código que copiamos del repositorio de GitHub)
-git push -u origin main
+git push -u origin main (subimos a GitHub que hemos creado esta rama main)
 
 
 --FIN INSTRUCCIONES FUNDAMENTALES--
@@ -50,7 +51,7 @@ git push -u origin main
     git rm  (y nombre del archivo) de esta forma borramos el archivo y nos saltamos un paso
 
     mv index.html nuevoindex.html (para cambiar el nombre a un archivo) primero ponemos el nombre antiguo y después el nuevo
-    git mv index.html nuevo index.html (así nos ahorramos un paso)
+    git mv index.html nuevoindex.html (así nos ahorramos un paso)
     git status para ver como se ha renombrado   renamed: index.html -> nuevoindex.html
 
     git log para ver todo el listado de commits (sale nombre de autor y emai)
@@ -74,7 +75,7 @@ git push -u origin main
     git branch  para verificar en que rama estamos en este caso en rama2
 
     -- Para TRAER LOS CAMBIOS DE RAMA2 A MAIN (merge) -- 
-    Devemos estar en main
+    Debemos estar en main
     git merge (seguido del nombre de la rama que queremos traer)
                en este caso git merge rama2
 
