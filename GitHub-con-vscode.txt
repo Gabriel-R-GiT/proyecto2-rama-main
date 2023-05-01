@@ -11,7 +11,16 @@
 
 6 - git init (para iniciar)
 
-7 - git remote add origin (pegamos el código que copiamos del repositorio de GitHub)
+--INICIO INSTRUCCIONES FUNDAMENTALES--
+git init
+git commit -m "first commit"
+git branch -m main  **--CON ESTE COMANDO CREAMOS LA RAMA MAIN EN LOCAL QUE ES LA MISMA QUE APARECE EN GITHUB--**
+git remote add origin https://github.com/Gabriel-R-GiT/nombre-del-repositorio.git (pegamos el código que copiamos del repositorio de GitHub)
+git push -u origin main
+
+
+--FIN INSTRUCCIONES FUNDAMENTALES--
+
 
 8 - git status  nos muestra los archivos que se encuentran dentro de la carpeta que vamos a subir
     (al principio salen en rojo porque aún no los hemos cargado)
@@ -24,14 +33,14 @@
 
 12 - git commit -m "nombre del commit (lo que hemos añadido o mejorado)"
 
-13 - git push -u origin master (a ahora sí hemos subido los archivos al repositorio de GitHub)
+13 - git push -u origin main (a ahora sí hemos subido los archivos al repositorio de GitHub)
 
 
 14 - vamos a la web de GitHub 
 
 15 - si los archivos no se ven le damos al boton de Compare & pull request
 
-16 - y ahora ya aparece todo en la rama master.
+16 - y ahora ya aparece todo en la rama main.
 
 17 - más comandos
 
@@ -61,11 +70,11 @@
     git push -u origin rama2   (subimos a GitHub los cambios de esta rama2)           
 
     git checkout (nombre de la rama) y cambiamos a esa rama
-                  ejemplo git checkout master
+                  ejemplo git checkout main
     git branch  para verificar en que rama estamos en este caso en rama2
 
-    -- Para TRAER LOS CAMBIOS DE RAMA2 A MASTER (merge) -- 
-    Devemos estar en master
+    -- Para TRAER LOS CAMBIOS DE RAMA2 A MAIN (merge) -- 
+    Devemos estar en main
     git merge (seguido del nombre de la rama que queremos traer)
                en este caso git merge rama2
 
