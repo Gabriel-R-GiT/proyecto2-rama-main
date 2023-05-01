@@ -1,0 +1,81 @@
+1 - Creamos el repositorio en la web de GitHub
+
+2 - Si queremos podemos añadirle el archivo readme
+
+3 - Copiamos el código que nos da https://
+
+4 - Creamos algunos archivos index.html o styles.css o
+    Utilizamos una carpeta con un proyecto ya existente con su html y css
+
+5 - En vscode le damos a terminal, nueva terminal
+
+6 - git init (para iniciar)
+
+7 - git remote add origin (pegamos el código que copiamos del repositorio de GitHub)
+
+8 - git status  nos muestra los archivos que se encuentran dentro de la carpeta que vamos a subir
+    (al principio salen en rojo porque aún no los hemos cargado)
+
+9 - git add    y el nombre de los archivos que vamos a cargar (index.html)
+
+10 - git status (nos mortraría el archivo html en verde y el css en rojo porque aún no está cargado)
+
+11 - git add .   (cargamos todos los archivos a la vez)
+
+12 - git commit -m "nombre del commit (lo que hemos añadido o mejorado)"
+
+13 - git push -u origin master (a ahora sí hemos subido los archivos al repositorio de GitHub)
+
+
+14 - vamos a la web de GitHub 
+
+15 - si los archivos no se ven le damos al boton de Compare & pull request
+
+16 - y ahora ya aparece todo en la rama master.
+
+17 - más comandos
+
+    ls   para ver el listado de archivos dentro de la carpeta que nos encontramos
+
+    rm   para borrar un archivo de esta lista (luego le hacemos git add y el nombre del archivo (para añadir que lo estamos borrando))
+    git rm  (y nombre del archivo) de esta forma borramos el archivo y nos saltamos un paso
+
+    mv index.html nuevoindex.html (para cambiar el nombre a un archivo) primero ponemos el nombre antiguo y después el nuevo
+    git mv index.html nuevo index.html (así nos ahorramos un paso)
+    git status para ver como se ha renombrado   renamed: index.html -> nuevoindex.html
+
+    git log para ver todo el listado de commits (sale nombre de autor y emai)
+    git log --oneline (se ve mucho más resumido)solo sale el listado de commits
+
+    git revert (El comando git revert deshará el commit que le hemos indicado, pero creará un nuevo commit deshaciendo la anterior:)
+               (La ventaja de utilizar git revert es que no afecta al commit histórico. Esto significa que puedes seguir viendo todos
+               los commits en tu histórico, incluso los revertidos.
+               Otra medida de seguridad es que todo sucede en local a no ser que los enviemos al repositorio remoto. Por esto es que 
+               git revert es más seguro de usar y es la manera preferida para deshacer los commit)
+
+    git branch para saber en que rama nos encontramos
+    git checkout -b (y nombre de la rama que vamos a crear y ya estamos dentro de ella) 
+                  ejemplo git checkout -b rama2
+    git add ...
+    git commit -m "nombre de lo añadido o modificado"
+    git push -u origin rama2   (subimos a GitHub los cambios de esta rama2)           
+
+    git checkout (nombre de la rama) y cambiamos a esa rama
+                  ejemplo git checkout master
+    git branch  para verificar en que rama estamos en este caso en rama2
+
+    -- Para TRAER LOS CAMBIOS DE RAMA2 A MASTER (merge) -- 
+    Devemos estar en master
+    git merge (seguido del nombre de la rama que queremos traer)
+               en este caso git merge rama2
+
+               se fusionan las ramas y a su vez hace un commit con nombre Merge branch 'rama2'
+
+
+-- Git clone -- PARA CLONAR UN REPOSITORIO DE GitHub ya existente
+git clone <https://link-con-nombre-del-repositorio>
+
+Git clone básicamente realiza una copia idéntica de la última versión de un proyecto 
+en un repositorio y la guarda en tu ordenador.
+
+Esto hará una copia del proyecto en tu espacio de trabajo local y así podrás empezar a trabajar con él.
