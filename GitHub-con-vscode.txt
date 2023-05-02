@@ -42,7 +42,7 @@ git push -u origin main (subimos a GitHub que hemos creado esta rama main)
 
 16 - más comandos
 
-    clear  para limpiar la terminal (tanto dentro de vscode como en git Bash)
+    clear  para limpiar la terminal (tanto en vscode como en Git Bash)
     ls     para ver el listado de archivos dentro de la carpeta que nos encontramos
 
     rm     para borrar un archivo de esta lista (luego le hacemos git add y el nombre del archivo (para añadir que lo estamos borrando))
