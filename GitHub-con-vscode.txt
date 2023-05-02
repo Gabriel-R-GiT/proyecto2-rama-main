@@ -19,7 +19,6 @@ git branch -m main  **--CON ESTE COMANDO CREAMOS LA RAMA MAIN EN LOCAL QUE ES LA
 git remote add origin https://github.com/Gabriel-R-GiT/nombre-del-repositorio.git (pegamos el código que copiamos del repositorio de GitHub)
 git push -u origin main (subimos a GitHub que hemos creado esta rama main)
 
-
 --FIN INSTRUCCIONES FUNDAMENTALES--
 
 
@@ -41,21 +40,20 @@ git push -u origin main (subimos a GitHub que hemos creado esta rama main)
 
 15 - si los archivos no se ven le damos al boton de Compare & pull request
 
-16 - y ahora ya aparece todo en la rama main.
+16 - más comandos
 
-17 - más comandos
+    clear  para limpiar la terminal (tanto dentro de vscode como en git Bash)
+    ls     para ver el listado de archivos dentro de la carpeta que nos encontramos
 
-    ls   para ver el listado de archivos dentro de la carpeta que nos encontramos
-
-    rm   para borrar un archivo de esta lista (luego le hacemos git add y el nombre del archivo (para añadir que lo estamos borrando))
+    rm     para borrar un archivo de esta lista (luego le hacemos git add y el nombre del archivo (para añadir que lo estamos borrando))
     git rm  (y nombre del archivo) de esta forma borramos el archivo y nos saltamos un paso
 
     mv index.html nuevoindex.html (para cambiar el nombre a un archivo) primero ponemos el nombre antiguo y después el nuevo
     git mv index.html nuevoindex.html (así nos ahorramos un paso)
     git status para ver como se ha renombrado   renamed: index.html -> nuevoindex.html
 
-    git log para ver todo el listado de commits (sale nombre de autor y emai)
-    git log --oneline (se ve mucho más resumido)solo sale el listado de commits
+    git log para ver todo el listado de commits (sale nombre de autor y email)
+    git log --oneline (se ve mucho más resumido) solo sale el listado de commits
 
     git revert (El comando git revert deshará el commit que le hemos indicado, pero creará un nuevo commit deshaciendo la anterior:)
                (La ventaja de utilizar git revert es que no afecta al commit histórico. Esto significa que puedes seguir viendo todos
@@ -64,8 +62,8 @@ git push -u origin main (subimos a GitHub que hemos creado esta rama main)
                git revert es más seguro de usar y es la manera preferida para deshacer los commit)
 
     git branch para saber en que rama nos encontramos
-    git checkout -b (y nombre de la rama que vamos a crear y ya estamos dentro de ella) 
-                  ejemplo git checkout -b rama2
+    git checkout -b  (y nombre de la rama que vamos a crear y ya estamos dentro de ella) 
+                    ejemplo git checkout -b rama2
     git add ...
     git commit -m "nombre de lo añadido o modificado"
     git push -u origin rama2   (subimos a GitHub los cambios de esta rama2)           
